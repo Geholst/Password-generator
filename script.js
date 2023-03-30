@@ -2,18 +2,13 @@
 var generateBtn = document.querySelector("#generate");
 
 //will have to make arrays of lower and upper letters, numbers, and symbols
-var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-var symbols = ["!", "@", "#", "$", "%", "&", "*", "/", "{", "}", "<", ">", "+", "=", ";"]
-var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
+var lowercase = ["abcdefghijklmnopqrstuvwxyz"];
+var uppercase = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
+var symbols = ["!@#$%&*/{}<>+=,;"]
+var numbers = ["1234567890"]
 
 //make generatePassword function
-function generatePassword() {
-  
-  return "P"
-}
 //prompt for password length is a number
-prompt 
 //if statement if number is above 8 && below 128
 //confirm for lowercase, uppercase, numeric, and special characters
 //store their response in a variable
@@ -38,3 +33,12 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
+function generatePassword() {
+  var password = "";
+  var passwordLength = prompt("How many characters would you like in your password? (0-128)");
+  if ()
+  
+  return;
+}
