@@ -24,6 +24,7 @@ N/A
   Used this website for a clearer understanding of arrays. https://www.w3schools.com/js/js_arrays.asp 
   Used this website for a clearer understanding of functions. https://www.w3schools.com/js/js_functions.asp 
   Used this video to help with my understanding of prompts. https://www.youtube.com/watch?v=sUALF2qQBRo
+  Used this site to help understand popups and alerts https://www.w3schools.com/js/js_popup.asp
 
 ## License
 
