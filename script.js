@@ -37,8 +37,22 @@ generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
   var password = "";
-  var passwordLength = prompt("How many characters would you like in your password? (0-128)");
-  if ()
-  
+  var passwordLength = prompt("How many characters would you like in your password? (8-128)");
+  if (passwordLength < 8 || passwordLength > 128) {
+      alert("Password can only be between 8 and 128 characters");
+     return;
+  }
+var lowercase = confirm("Would you like lowercase letters?")
+var uppercase = confirm("would you like uppercase letters?")
+var numbers = confirm("would you like numbers?")
+var symbols = confirm("would you like symbols?") 
+if (!lowercase && !uppercase && !numbers && !symbols) {
+  alert("must choose a character");
   return;
 }
+
+
+
+
+}
+
