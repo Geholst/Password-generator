@@ -2,11 +2,12 @@
 var generateBtn = document.querySelector("#generate");
 
 //will have to make arrays of lower and upper letters, numbers, and symbols
-var lowercase = ["abcdefghijklmnopqrstuvwxyz"];
-var uppercase = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
-var symbols = ["!@#$%&*/{}<>+=,;"];
-var numbers = ["1234567890"];
-
+var variables = {
+lowercase:"abcdefghijklmnopqrstuvwxyz",
+ uppercase:"ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+ symbols:"!@#$%&*/{}<>+=,;",
+ numbers:"1234567890"
+}
 //make generatePassword function
 //prompt for password length is a number
 //if statement if number is above 8 && below 128
@@ -38,18 +39,22 @@ function generatePassword() {
   for (var i = 0; i < passwordLength; i++) {
     var characterTypes = [];
     if (lowercase) {
-      characterTypes.push(lowercase);
+      characterTypes.push(variables.lowercase);
     }
     if (uppercase) {
-      characterTypes.push(uppercase);
+      characterTypes.push(variables.uppercase);
     }
     if (symbols) {
-      characterTypes.push(symbols);
+      characterTypes.push(variables.symbols);
     }
     if(numbers) {
-      characterTypes.push(numbers);
+      characterTypes.push(variables.numbers);
     }
+    var characterType = characterTypes[Math.floor(Math.random() * characterTypes.length)];
+    var character = characterType[Math.floor(Math.random() * characterType.length)];
+    password += character;
   }
+  return password;
 }
 
 // Write password to the #password input
