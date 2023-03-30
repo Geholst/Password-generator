@@ -33,7 +33,6 @@ function generatePassword() {
   var numbers = confirm("would you like numbers?");
   var symbols = confirm("would you like symbols?");
   if (!lowercase && !uppercase && !numbers && !symbols) {
-    alert("must choose a character");
     return;
   }
   for (var i = 0; i < passwordLength; i++) {
